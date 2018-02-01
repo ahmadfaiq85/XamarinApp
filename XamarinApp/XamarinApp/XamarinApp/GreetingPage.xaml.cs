@@ -17,8 +17,7 @@ namespace XamarinApp
             InitializeComponent();
 
             slider.Value = 0.5;
-
-
+            
 
             //if (Device.OS == TargetPlatform.iOS)
             //    Padding = new Thickness(0, 20, 0, 0);
