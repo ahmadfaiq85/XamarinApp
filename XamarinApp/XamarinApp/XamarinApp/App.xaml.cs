@@ -13,7 +13,7 @@ namespace XamarinApp
 		{
 			InitializeComponent();
 
-			MainPage = new XamarinApp.AbsoluteLayoutExercise();
+			MainPage = new XamarinApp.AbsolutePage();
 		}
 
 		protected override void OnStart ()
