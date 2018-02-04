@@ -13,7 +13,7 @@ namespace XamarinApp
 		{
 			InitializeComponent();
 
-			MainPage = new XamarinApp.GridPage();
+			MainPage = new XamarinApp.GridExercise();
 		}
 
 		protected override void OnStart ()
