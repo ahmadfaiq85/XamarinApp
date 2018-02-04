@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinApp.GridPage"
              Padding="0,20,0,0">
-    <Grid BackgroundColor="Yellow"
+    <!--<Grid BackgroundColor="Yellow"
           RowSpacing="40"
           ColumnSpacing="40">
         <Grid.RowDefinitions>
@@ -23,5 +23,5 @@
         <Label Grid.Row="2" Grid.ColumnSpan="3" Text="Column Span" BackgroundColor="Silver"/>
         <Label Grid.Column="2" Grid.RowSpan="3" Text="Row Span" BackgroundColor="Silver"/>
 
-    </Grid>
+    </Grid>-->
 </ContentPage>
