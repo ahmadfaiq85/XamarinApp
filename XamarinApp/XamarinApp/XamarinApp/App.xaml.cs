@@ -13,7 +13,7 @@ namespace XamarinApp
 		{
 			InitializeComponent();
 
-			MainPage = new XamarinApp.RelativeLayoutExercise();
+			MainPage = new XamarinApp.Images();
 		}
 
 		protected override void OnStart ()
