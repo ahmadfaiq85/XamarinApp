@@ -13,7 +13,8 @@ namespace XamarinApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListviewSelection : ContentPage
     {
-        private ObservableCollection<Contact> _contacts;
+        //private ObservableCollection<Contact> _contacts;
+        private IEnumerable<Contact> _contacts;
         public ListviewSelection()
         {
             InitializeComponent();
@@ -23,13 +24,24 @@ namespace XamarinApp
             listview.ItemsSource = _contacts;
         }
 
-        ObservableCollection<Contact> GetContacts()
+        //ObservableCollection<Contact> GetContacts(string searchText = null)
+        IEnumerable<Contact> GetContacts(string searchText = null)
         {
-            return new ObservableCollection<Contact>
+            var contacts = new ObservableCollection<Contact>
             {
                 new Contact {Name = "Faiq", ImageUrl = "http://lorempixel.com/100/100/people/3"},
                 new Contact {Name = "Taha", ImageUrl = "http://lorempixel.com/100/100/people/2", Status = "Hi, how is it going?"}
             };
+
+            if (string.IsNullOrWhiteSpace(searchText))
+                return contacts;
+
+            return contacts.Where(c=> c.Name.StartsWith(searchText));
+        }
+
+        void Search_TextChanged ( object sender, TextChangedEventArgs e)
+        {
+           listview.ItemsSource = GetContacts(e.NewTextValue);
         }
 
         void Item_Selected(object sender, SelectedItemChangedEventArgs e)
@@ -56,7 +68,7 @@ namespace XamarinApp
         void Delete_Clicked(object sender, EventArgs e)
         {
             var contact = (sender as MenuItem).CommandParameter as Contact;
-            _contacts.Remove(contact);
+            //_contacts.Remove(contact);
         }
 
         void List_Refreshing(object sender, EventArgs e)
