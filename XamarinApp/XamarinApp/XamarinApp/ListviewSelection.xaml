@@ -4,7 +4,7 @@
              x:Class="XamarinApp.ListviewSelection">
     <ListView x:Name="listview" SeparatorColor="Gray" 
               ItemTapped="Item_Tapped"
-              ItemSelected="Item_Selected">
+              ItemSelected="Item_Selected" IsPullToRefreshEnabled="True" Refreshing="List_Refreshing">
         <ListView.ItemTemplate>
             <DataTemplate> 
                 <TextCell Text="{Binding Name}" Detail="{Binding Status}" >
