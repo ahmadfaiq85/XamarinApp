@@ -27,6 +27,11 @@ namespace XamarinApp
             //image.Aspect = Aspect.AspectFill;
             image.Aspect = Aspect.AspectFit;
             //image.Aspect = Aspect.Fill;
+
+            //Embedded resource
+            //image.Source = ImageSource.FromResource("XamarinApp.Images.background.jpg");
+
+
         }
 	}
 }
