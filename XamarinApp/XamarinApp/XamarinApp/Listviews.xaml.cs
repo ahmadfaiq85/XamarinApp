@@ -12,18 +12,34 @@ namespace XamarinApp
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Listviews : ContentPage
 	{
+
+        public class Contact
+        {
+            public string Name { get; set; }
+            public string ImageUrl { get; set; }
+            public string Status { get; set; }
+        }
 		public Listviews ()
 		{
 			InitializeComponent ();
 
-            var names = new List<string>
+            //var names = new List<string>
+            //{
+            //    "Faiq",
+            //    "Taha",
+            //    "Hosa"
+            //};
+
+            //listview.ItemsSource = names;
+
+
+            listview.ItemsSource = new List<Contact>
             {
-                "Faiq",
-                "Taha",
-                "Hosa"
+                new Contact {Name = "Faiq", ImageUrl = "http://lorempixel.com/100/100/people/1"},
+                new Contact {Name = "Taha", ImageUrl = "http://lorempixel.com/100/100/people/2", Status = "Hi, how is it going?"}
             };
 
-            listview.ItemsSource = names;
+
 		}
 	}
 }
