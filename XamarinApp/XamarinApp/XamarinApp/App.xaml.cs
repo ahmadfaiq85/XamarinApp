@@ -13,7 +13,7 @@ namespace XamarinApp
 		{
 			InitializeComponent();
 
-			MainPage = new XamarinApp.Listviews();
+			MainPage = new XamarinApp.ListviewViewCell();
 		}
 
 		protected override void OnStart ()
