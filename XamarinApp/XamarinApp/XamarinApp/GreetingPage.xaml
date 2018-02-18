@@ -17,7 +17,7 @@
                
                Opacity="{Binding Value}" />
         <Slider x:Name="slider" />
-
+        <Button Text="Back to Heirarchical Navigation" Clicked="Back_Clicked"/>
     </StackLayout>
     
 </ContentPage>

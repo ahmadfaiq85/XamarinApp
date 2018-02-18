@@ -42,5 +42,10 @@ namespace XamarinApp
             //    });
         }
 
+        async void Back_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
+
     }
 }
