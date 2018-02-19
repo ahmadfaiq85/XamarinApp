@@ -13,7 +13,7 @@ namespace XamarinApp
 		{
 			InitializeComponent();
 
-            MainPage = new XamarinApp.Carousel();
+            MainPage = new XamarinApp.Popups();
 		}
 
 		protected override void OnStart ()
