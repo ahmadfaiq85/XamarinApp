@@ -34,5 +34,17 @@ namespace XamarinApp
 
 
 		}
+
+        async void Item_Selected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+                return;
+
+            var contact = e.SelectedItem as Contact;
+
+            await Navigation.PushAsync(new ContactDetailPage(contact));
+            listview.SelectedItem = null;
+        }
+
 	}
 }
