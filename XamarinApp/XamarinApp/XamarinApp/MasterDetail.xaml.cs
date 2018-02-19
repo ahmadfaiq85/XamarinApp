@@ -10,36 +10,24 @@ using Xamarin.Forms.Xaml;
 namespace XamarinApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Listviews : ContentPage
+	public partial class MasterDetail : MasterDetailPage
 	{
-		public Listviews ()
+		public MasterDetail ()
 		{
 			InitializeComponent ();
-
-            //var names = new List<string>
-            //{
-            //    "Faiq",
-            //    "Taha",
-            //    "Hosa"
-            //};
-            //listview.ItemsSource = names;
 
             listview.ItemsSource = new List<Contact>
             {
                 new Contact {Name = "Faiq", ImageUrl = "http://lorempixel.com/100/100/people/1"},
                 new Contact {Name = "Taha", ImageUrl = "http://lorempixel.com/100/100/people/2", Status = "Hi, how is it going?"}
             };
-		}
-
-        async void Item_Selected(object sender, SelectedItemChangedEventArgs e)
-        {
-            if (e.SelectedItem == null)
-                return;
-
-            var contact = e.SelectedItem as Contact;
-
-            await Navigation.PushAsync(new ContactDetailPage(contact));
-            listview.SelectedItem = null;
         }
-	}
+
+        void Item_Selected(object sender, SelectedItemChangedEventArgs e)
+        { 
+            var contact = e.SelectedItem as Contact;
+            Detail = new NavigationPage(new ContactDetailPage(contact));
+            IsPresented = false;
+        }
+    }
 }
