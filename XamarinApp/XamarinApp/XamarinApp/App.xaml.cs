@@ -13,7 +13,7 @@ namespace XamarinApp
 		{
 			InitializeComponent();
 
-			MainPage = new XamarinApp.ListviewSelection();
+			MainPage = new XamarinApp.ModalPage();
 		}
 
 		protected override void OnStart ()

@@ -17,7 +17,7 @@
                
                Opacity="{Binding Value}" />
         <Slider x:Name="slider" />
-
+        <Button Text="Close Modal" Clicked="Modal_Close"/>
     </StackLayout>
     
 </ContentPage>
