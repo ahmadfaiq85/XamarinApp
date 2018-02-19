@@ -6,10 +6,16 @@
 
   <ItemGroup>
     <None Remove="Images\background.jpg" />
+    <None Remove="Images\clock%402x.png" />
+    <None Remove="Images\clock%403x.png" />
+    <None Remove="Images\clock.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Images\background.jpg" />
+    <EmbeddedResource Include="Images\clock.png" />
+    <EmbeddedResource Include="Images\clock@2x.png" />
+    <EmbeddedResource Include="Images\clock@3x.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -84,6 +90,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="StackPageExercise2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TabPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
