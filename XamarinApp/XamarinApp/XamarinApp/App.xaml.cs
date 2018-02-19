@@ -13,7 +13,7 @@ namespace XamarinApp
 		{
 			InitializeComponent();
 
-            MainPage = new NavigationPage(new XamarinApp.Toolbars());
+            MainPage = new TabPage();
 		}
 
 		protected override void OnStart ()

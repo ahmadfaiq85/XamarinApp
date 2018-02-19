@@ -12,11 +12,12 @@ namespace XamarinApp
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Toolbars : ContentPage
 	{
+        //Toolbars only appear in NavigationPage
 		public Toolbars ()
 		{
 			InitializeComponent ();
 		}
-
+        
         void New_Activated (object sender, EventArgs e)
         {
             DisplayAlert("New", "New Activated", "Ok");
