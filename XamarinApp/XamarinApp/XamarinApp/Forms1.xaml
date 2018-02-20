@@ -11,6 +11,9 @@
 
             <Slider x:Name="slider" Maximum="255" Minimum="10" Value="125"/>
             <Label Text="{Binding Source={x:Reference slider}, Path=Value, StringFormat='{0:N0}'}" HorizontalOptions="Center"/>
+
+            <Stepper x:Name="stepper" Increment="5" HorizontalOptions="Center" Maximum="255" Minimum="0" Value="125"/>
+            <Label Text="{Binding Source={x:Reference stepper}, Path=Value}" HorizontalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
