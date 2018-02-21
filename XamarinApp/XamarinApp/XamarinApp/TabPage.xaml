@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage  xmlns:local="clr-namespace:XamarinApp"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp.TabPage">
+    <local:ModalPage Title="Contacts" Icon="clock.png" />
+    <ContentPage Title="Page 1" Icon="clock.png">
+        <Label Text="Content page 1" HorizontalOptions="Center" VerticalOptions="Center"/>
+    </ContentPage> 
+    <ContentPage Title="Page 2" Icon="clock.png"> 
+        <Label Text="Content page 2" HorizontalOptions="Center" VerticalOptions="Center"/>
+    </ContentPage>
+</TabbedPage>

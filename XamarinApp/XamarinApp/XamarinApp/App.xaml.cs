@@ -13,8 +13,7 @@ namespace XamarinApp
 		{
 			InitializeComponent();
 
-            //Required by Hierarchical Navigation
-			MainPage = new NavigationPage(new XamarinApp.HierarchicalNavigation());
+            MainPage = new Forms1();
 		}
 
 		protected override void OnStart ()

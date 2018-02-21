@@ -42,9 +42,10 @@ namespace XamarinApp
             //    });
         }
 
-        async void Back_Clicked(object sender, EventArgs e)
+        //Close Modal Page
+        async void Modal_Close (object sender, EventArgs e)
         {
-            await Navigation.PopAsync();
+            await Navigation.PopModalAsync();
         }
 
     }
