@@ -13,7 +13,7 @@ namespace XamarinApp
 		{
 			InitializeComponent();
 
-            MainPage = new Forms1();
+            MainPage = new TableView1();
 		}
 
 		protected override void OnStart ()
