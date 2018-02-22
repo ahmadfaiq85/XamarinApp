@@ -8,12 +8,17 @@
                 <TextCell Text="Name" Detail="Ahmad Faiq Ateel"/>
                 <EntryCell Label="Title" Placeholder="(eg Shopping)" Keyboard="Text"/>
                 <SwitchCell Text="Notifications" On="True"/>
-                <ViewCell>
+                <ViewCell Tapped="ViewCell_Tapped">
                     <StackLayout Orientation="Horizontal" Padding="13, 0">
                         <Label Text="Starts" VerticalOptions="Center"/>
                         <DatePicker Date="1 Jan 2016" HorizontalOptions="EndAndExpand"/>
                     </StackLayout>
                 </ViewCell>
+                <Label x:Name="contactMethod" 
+                       VerticalOptions="Center"
+                       HorizontalOptions="EndAndExpand"
+                       Text="None"
+                       TextColor="Gray"/>
             </TableSection>
         </TableRoot>
     </TableView>
