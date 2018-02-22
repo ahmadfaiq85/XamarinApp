@@ -8,6 +8,12 @@
                 <TextCell Text="Name" Detail="Ahmad Faiq Ateel"/>
                 <EntryCell Label="Title" Placeholder="(eg Shopping)" Keyboard="Text"/>
                 <SwitchCell Text="Notifications" On="True"/>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" Padding="13, 0">
+                        <Label Text="Starts" VerticalOptions="Center"/>
+                        <DatePicker Date="1 Jan 2016" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </ViewCell>
             </TableSection>
         </TableRoot>
     </TableView>
