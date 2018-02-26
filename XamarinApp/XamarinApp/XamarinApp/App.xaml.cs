@@ -13,7 +13,7 @@ namespace XamarinApp
 		{
 			InitializeComponent();
 
-            MainPage = new AppProperties();
+            MainPage = new SQLiteImplementation();
 		}
 
 		protected override void OnStart ()
