@@ -13,7 +13,7 @@ namespace XamarinApp
 		{
 			InitializeComponent();
 
-            MainPage = new Forms1();
+            MainPage = new NetflixExcercise();
 		}
 
 		protected override void OnStart ()
