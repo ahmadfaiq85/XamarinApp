@@ -14,6 +14,11 @@
 
             <Stepper x:Name="stepper" Increment="5" HorizontalOptions="Center" Maximum="255" Minimum="0" Value="125"/>
             <Label Text="{Binding Source={x:Reference stepper}, Path=Value}" HorizontalOptions="Center"/>
+
+            <Entry Keyboard="Numeric" Placeholder="Phone"/>
+            <Entry Keyboard="Email" Placeholder="Email"/>
+            <Entry IsPassword="True" Placeholder="Password"/>
+            <Editor/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
