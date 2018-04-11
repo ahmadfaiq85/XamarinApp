@@ -4,7 +4,8 @@
              x:Class="XamarinApp.NetflixExcercise">
     <StackLayout>
         <SearchBar Placeholder="Search..." FontAttributes="Bold" TextChanged="Search_TextChanged"/>
-        <ListView x:Name="moviesListView">
+        <Button Text="Get Articles" Clicked="GetArticles_Clicked"/>
+        <ListView x:Name="articlesListView">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Title}" />

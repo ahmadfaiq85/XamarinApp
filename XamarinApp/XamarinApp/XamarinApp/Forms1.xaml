@@ -29,6 +29,7 @@
             </Picker>
 
             <DatePicker Date="{x:Static sys:DateTime.Today}" Format="d MMM yyyy" MinimumDate="1 Jan 2018" MaximumDate="30 Dec 2018"/>
+            
             <TimePicker Time="13:00" />
             
             

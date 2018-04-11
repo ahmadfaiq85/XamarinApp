@@ -40,7 +40,7 @@ namespace XamarinApp
             _posts = new ObservableCollection<Post>(posts);
             postsListView.ItemsSource = _posts;
 
-            base.OnAppearing(); 
+            base.OnAppearing();
         }
 
         async void OnAdd(object sender, System.EventArgs e)
